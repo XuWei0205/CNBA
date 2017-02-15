@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_match_detail__stats_land"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:overScrollMode="never">
+
+    <ImageView
+        android:id="@+id/state_land_network_error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff6f6f6"
+        android:scaleType="center"
+        android:src="@drawable/network_errortip_select"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/state_land_network_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff6f6f6"
+        android:scaleType="center"
+        android:src="@drawable/network_no_data"
+        android:visibility="gone" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_match_stats_land"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff6f6f6">
+
+        <LinearLayout
+            android:id="@+id/Ll_match_detail_stats_land_top_select"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="12.0dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_match_detail_stats_land"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="82.0dip"
+                android:layout_marginRight="43.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/match_tab_right_land"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/rl_match_detail_stats_land_team_One"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ib_match_detail_stats_land_team_One"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/rb_match_detail_stats_land_team_One"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/ib_match_detail_stats_land_team_One"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_match_detail_stats_land_team_Two"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ib_match_detail_stats_land_team_Two"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/rb_match_detail_stats_land_team_Two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/ib_match_detail_stats_land_team_Two"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="26.0dip"
+                        android:textColor="@color/stats_tab_not_select_grey"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_match_state_land_change_vertical"
+                android:layout_width="@dimen/tv_match_header_item_height"
+                android:layout_height="@dimen/tv_match_header_item_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4.0dip"
+                android:background="@drawable/icon_change_back_vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_top_match_stats_land">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.nbagametime.ui.widget.progress.ProgressView android:id="@id/progress_view" android:background="@color/nba_white" android:layout_width="30.0dip" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

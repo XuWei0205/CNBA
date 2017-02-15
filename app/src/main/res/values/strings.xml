@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CNBA</string>
+    <string name="no_match">(无比赛)</string>
+    <string name="more_content">内容</string>
+    <string name="title_team">球队</string>
+    <string name="title_player">球员</string>
+    <string name="title_qdsc">球队赛程</string>
+    <string name="title_ranking">排名</string>
+    <string name="title_pics">图集</string>
+    <string name="title_date">重要日期</string>
+    <string name="title_push_msg">发送消息</string>
+    <string name="more_game">赛事互动</string>
+    <string name="more_buy">购买</string>
+    <string name="more_setting">设置</string>
+    <string name="more_cleaner">清理缓存</string>
+    <string name="title_picture">图片</string>
+    <string name="title_playoff_rank">赛后对阵图</string>
+    <string name="rebound">篮板</string>
+    <string name="point">得分</string>
+    <string name="steal">抢断</string>
+    <string name="block">盖帽</string>
+    <string name="assist">助攻</string>
+    <string name="title_details">详情</string>
+
+</resources>

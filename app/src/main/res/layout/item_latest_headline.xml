@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgv_latest_headline"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="15sp"
+        android:paddingTop="4dp"
+        android:paddingLeft="10dp"
+        android:gravity="start"
+        android:textColor="@color/nba_black"
+        android:id="@+id/tv_latest_headline"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imgv_latest_headline"
+        android:layout_height="40dp"
+        android:background="@color/nba_white"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/nba_light_grey">
+
+    </ImageView>
+
+
+</RelativeLayout>

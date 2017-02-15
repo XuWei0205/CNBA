@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/new_player_all"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/nba_white">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_layout_match_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="170.0dip"
+            android:minHeight="@dimen/title_bar_height"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_collapseParallaxMultiplier="0.0"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:statusBarScrim="@color/colorPrimary">
+
+            <RelativeLayout
+                android:id="@+id/new_player_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="170.0dip"
+                android:layout_below="@+id/title_layout"
+                android:background="@drawable/team_bg"
+                android:paddingRight="@dimen/indicator_right_padding"
+                android:paddingTop="@dimen/indicator_right_padding">
+
+                <FrameLayout
+                    android:id="@+id/new_player_fl"
+                    android:layout_width="114.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <ImageView
+                        android:id="@+id/new_player_team"
+                        android:layout_width="62.0dip"
+                        android:layout_height="62.0dip"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_marginTop="25.0dip"
+                        android:alpha="40.0"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:id="@+id/new_player_logo"
+                        android:layout_width="109.0dip"
+                        android:layout_height="79.5dip"
+                        android:layout_marginLeft="7.0dip"
+                        android:layout_marginRight="7.0dip"
+                        android:layout_marginTop="81.0dip"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/data_team_logo_loading_76px" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/new_player_jerseyNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/indicator_right_padding"
+                    android:layout_marginStart="@dimen/indicator_right_padding"
+                    android:layout_marginTop="45.0dip"
+                    android:layout_toEndOf="@id/new_player_fl"
+                    android:layout_toRightOf="@id/new_player_fl"
+                    android:textColor="@color/nba_white"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/new_player_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginStart="12.0dip"
+                    android:layout_marginTop="45.0dip"
+                    android:layout_toEndOf="@id/new_player_jerseyNum"
+                    android:layout_toRightOf="@id/new_player_jerseyNum"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/nba_white"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/new_player_english_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/new_player_name"
+                    android:layout_below="@id/new_player_name"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toEndOf="@id/new_player_fl"
+                    android:layout_toRightOf="@id/new_player_fl"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/nba_medium_grey"
+                    android:textSize="14.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/new_player_ll_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_player_english_name"
+                    android:layout_marginLeft="@dimen/indicator_right_padding"
+                    android:layout_marginTop="12.0dip"
+                    android:layout_toEndOf="@id/new_player_fl"
+                    android:layout_toRightOf="@id/new_player_fl">
+
+                    <TextView
+                        android:id="@+id/new_player_TeamName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/new_player_TeamPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_marginStart="12.0dip"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/new_player_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_marginStart="12.0dip"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="cm"
+                        android:textColor="@color/nba_white"
+                        android:textSize="13.0sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/new_player_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_marginStart="12.0dip"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="kg"
+                        android:textColor="@color/nba_white"
+                        android:textSize="13.0sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/new_player_ll_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/new_player_ll_one"
+                    android:layout_marginLeft="@dimen/indicator_right_padding"
+                    android:layout_marginStart="@dimen/indicator_right_padding"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:layout_toEndOf="@id/new_player_fl"
+                    android:layout_toRightOf="@id/new_player_fl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="生日 :"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/new_player_birthDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_marginStart="3.0dip"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="14.0dip"
+                        android:layout_marginStart="14.0dip"
+                        android:text="选秀 :"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/new_player_draftYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_marginStart="3.0dip"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="年"
+                        android:textColor="@color/nba_white"
+                        android:textSize="12.0sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="#10000000"
+                app:contentInsetStart="0.0dip"
+                app:layout_collapseMode="pin">
+
+                <FrameLayout
+                    android:id="@+id/new_player_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/btn_back"
+                        style="@style/CustomBackBtnTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28.0dip"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10.0dip"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_player" />
+
+                    <TextView
+                        android:id="@+id/tv_match_detail_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/title_details"
+                        android:textColor="@color/nba_white"
+                        android:textSize="20.0sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            <RelativeLayout
+                android:id="@+id/temporary_container_fragment_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        layout="@layout/include_network_error_new"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/include_progress_view_new"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

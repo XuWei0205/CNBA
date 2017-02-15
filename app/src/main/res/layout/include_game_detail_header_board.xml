@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/match_header_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/title_bar_height">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_match_detail_header_quarter"
+                android:layout_width="wrap_content"
+                android:layout_height="33.0dip"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#ffff3434"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_match_detail_header_left_standing"
+                android:layout_width="wrap_content"
+                android:layout_height="33.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80.0dip"
+                android:layout_toLeftOf="@id/tv_match_detail_header_quarter"
+                android:gravity="center|left"
+                android:textColor="#ffaaaaaa"
+                android:textSize="10.0sp" />
+
+            <TextView
+                android:id="@+id/tv_match_detail_header_right_standing"
+                android:layout_width="wrap_content"
+                android:layout_height="33.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="80.0dip"
+                android:layout_toRightOf="@id/tv_match_detail_header_quarter"
+                android:gravity="center|right"
+                android:textColor="#ffaaaaaa"
+                android:textSize="10.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_game_detail_header_score"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_below="@id/tv_match_detail_header_quarter">
+
+                <ImageView
+                    android:id="@+id/iv_game_detail_header_icon_left"
+                    android:layout_width="45.0dip"
+                    android:layout_height="45.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:src="@drawable/match_team_logo_top_touming" />
+
+                <ImageView
+                    android:id="@+id/iv_game_detail_header_icon_right"
+                    android:layout_width="45.0dip"
+                    android:layout_height="45.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/match_team_logo_top_touming" />
+
+                <TextView
+                    android:id="@+id/tv_match_detail_header_score_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@id/iv_game_detail_header_icon_left"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="24.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_match_detail_header_score_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toLeftOf="@id/iv_game_detail_header_icon_right"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="24.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_match_detail_header_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_match_detail_header_series"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/match_desc_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_match_detail_header_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:gravity="center"
+                android:textColor="#ffaaaaaa"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_match_detail_header_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffaaaaaa"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_match_detail_header_arena"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:maxLines="1"
+                android:textColor="#ffaaaaaa"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_skip"
+            android:layout_width="fill_parent"
+            android:layout_height="27.0dip"
+            android:background="#9b1a477b"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_skip_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/match_btn_icon"
+                android:drawablePadding="9.0dip"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>
