@@ -4,6 +4,8 @@ package com.hanyu.cnba.activities;
 
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
@@ -178,12 +180,8 @@ public class MainActivity extends BasicActivity {
             FragmentTransaction ft = fgmM.beginTransaction();
             ft.replace(R.id.act_frg,fragment,tag);
             ft.commitAllowingStateLoss();
-           /* FragmentManager fgmM = getSupportFragmentManager();
-            FragmentTransaction ft = fgmM.beginTransaction();
-            ft.replace(R.id.act_frg, fragment,tag);
-            ft.commitAllowingStateLoss();*/
             currentFrg = id;
-            CLog.i("+++++++++++++++++"+id+"+=====================");
+            CLog.i("+++++++++++++++++" + id + "+=====================");
         }
 
     }
@@ -259,5 +257,11 @@ public class MainActivity extends BasicActivity {
     public void onBackPressed() {
         super.onBackPressed();
         ActivityManager.finishAll();
+    }
+
+    public static void startActivity(Context content){
+        Intent intent = new Intent (content,MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        content.startActivity(intent);
     }
 }

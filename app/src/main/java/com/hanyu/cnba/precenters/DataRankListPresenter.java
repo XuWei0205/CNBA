@@ -28,7 +28,7 @@ public class DataRankListPresenter implements IDataRankListPresenter {
 
     @Override
     public void getData(String statType, String num, String tabType, String seasonId) {
-        http://sportsnba.qq.com/player/statsRank?statType=point&num=25&tabType=1&seasonId=2016
+
         iModel.getLatestHeadlineInfo(statType,num,tabType,seasonId);
     }
 }
